@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: KTP Research Associate at <a href='https://www.falconfoodservice.com/'>Falcon Foodservice Equipment</a> and <a href='https://www.ncl.ac.uk/computing/staff/profile/jamesrainey.html'>Newcastle University</a>
+subtitle: Research Associate at <a href='https://www.ncl.ac.uk/computing/staff/profile/jamesrainey.html'>Newcastle University</a>
 
 profile:
   align: right
@@ -25,6 +25,7 @@ I’m a **Computer Vision Researcher** passionate about building intelligent sys
 
 With experience in both research and industry, I specialise in taking innovative concepts from prototype to fully functional systems. I’ve contributed to projects across a variety of domains, including:
 
+<p><a href="projects/">Algae Detection</a> - creating a method for detecting algae growth using satellite imagery.</p>
 <p><a href="projects/">Food Recognition</a> – developing systems that understand and classify food images.</p>
 <p><a href="projects/NEVIS">Neuromorphic Vision</a> – exploring brain-inspired vision systems for efficient processing.</p>
 <p><a href="projects/">Media Authenticity</a> – detecting deepfake images and verifying visual content integrity.</p>
@@ -35,6 +36,4 @@ I’m skilled in **Python** and modern deep learning frameworks, with a strong t
 Beyond my professional work, I’m fascinated by hands-on technology and creative experimentation. I spend my free time exploring 3D printing, Raspberry Pi projects, and other maker activities that allow me to prototype ideas, tinker with hardware, and bring abstract concepts to life.
 
 Ultimately, I’m driven by **curiosity**, **creativity**, and a desire to apply AI and computer vision in ways that make a _tangible_ difference. Whether through research, development, or collaborative projects, I strive to combine **technical excellence** with **innovative thinking** to solve challenging problems and create impactful solutions.
-
-<br>
 <br>

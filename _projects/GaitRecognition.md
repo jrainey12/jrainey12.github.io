@@ -4,7 +4,6 @@ title: Markerless Motion Capture
 description: For Gait Recognition
 main_title: <h1 align=center>Markerless Motion Capture Based Gait Recognition</h1><hr>
 main_description: <h2 align=center>Recognising People by How they Walk, Not How They Look </h2>
-
 img: assets/img/GaitRecognition/joints.png
 importance: 3
 category: PhD
@@ -29,7 +28,7 @@ I wanted to build something different: a system that looks only at **movement**,
 
 <br>
 
-## 🎯 Goal
+## Goal
 ---
 
 The main goal of this project was to create a **movement-only gait recognition system** that uses standard camera footage without relying on depth sensors or marker based cpature for gait recognition.
@@ -39,7 +38,7 @@ The approach focuses purely on **body motion**, not shape or looks, which is der
 The ultimate ambition was to develop a system that performs **competitively** with methods using advanced motion capture systems, without requiring expensive capture equipment.  
 
 <br>
-## ⚙️ How It Works
+## How It Works
 ---
 Here’s the full pipeline:
 
@@ -77,7 +76,7 @@ Joints extracted from an image (left), joints fitted to a synthetic body model (
 
 <br>
 
-## 💡 Tech Stack
+## Tech Stack
 ---
 
 A variety of tools were required to make this possible:
@@ -96,7 +95,7 @@ A variety of tools were required to make this possible:
 </div>
 <br>
 
-## 🧩 Challenges & Solutions
+## Challenges & Solutions
 ---
 
 Throughout the project, numerous challenges emerged but none proved beyond reach. Each obstacle demanded patience, experimentation, and creative thinking, turning setbacks into valuable learning experiences. In the end, every issue found a solution, reinforcing the project’s success and the adaptability of the approach.
@@ -111,7 +110,7 @@ Throughout the project, numerous challenges emerged but none proved beyond reach
 
 <br>
 
-## 📊 Results
+## Results
 ---
 
 Even though the model only used 2D video, it performed on par with systems using 3D Kinect depth data or traditional motion capture setups to extract skeleton information, a big win for accessibility and scalability.
@@ -130,13 +129,13 @@ Even though the model only used 2D video, it performed on par with systems using
 
 <br>
 
-## 🔍 Why This Matters
+## Why This Matters
 ---
 **Non-intrusive:**
 This method operates without requiring the subject’s active participation or awareness. Unlike other biometric systems that need fingerprints, iris scans, or facial alignment, motion-based analysis can identify and track individuals naturally as they go about their activities. This makes it ideal for real-world scenarios where cooperation cannot be expected, such as forensic video analysis.
 
 **Hardware-free:**
-It relies solely on standard video cameras or existing footage rather than specialized sensors, wearable devices, or motion-capture suits. This not only reduces cost and complexity but also makes the technology easier to deploy in everyday environments.
+It relies solely on standard video cameras or existing footage rather than specialised sensors, wearable devices, or motion-capture suits. This not only reduces cost and complexity but also makes the technology easier to deploy in everyday environments.
 
 **Clothing-robust:**
 The system focuses on body movement and dynamics rather than surface appearance. Because it analyses the underlying motion patterns, it remains effective regardless of what the person is wearing, be it casual clothes, uniforms, or loose-fitting garments. This robustness ensures reliable performance even in diverse, uncontrolled settings.
@@ -147,7 +146,7 @@ The same underlying technology can be extended to multiple fields and at differe
 Together, these points demonstrate that our movement patterns, *how* we walk and move, are as unique and informative as our facial features. This insight opens up powerful possibilities for recognition, behavioral analysis, and creative applications across a wide range of industries.
 
 <br>
-## 🔑  Key Takeaways
+## Key Takeaways
 ---
 **Movement is identity:**
 The way we move says more about us than we realise. Our gait carries subtle, deeply personal signatures, tiny variations in stride, rhythm, and posture that make each of us instantly recognisable. Just as a face can tell who we are, so can the way we walk, turn, or gesture. Movement, in this sense, becomes an extension of identity, an invisible fingerprint in motion.
@@ -160,7 +159,7 @@ Building a great machine learning model used to mean hours or days of trial and 
 Expensive motion capture suits still have a role to play in high precision application. However, today’s computer vision systems can reconstruct surprisingly accurate 3D movement from simple 2D video and it will only get better. Markerless motion capture takes ordinary footage and brings it to life in three dimensions, estimating joint angles, depth, and dynamics with impressive precision. It’s a leap that makes advanced motion analysis accessible to anyone with a camera.
 
 <br>
-## 🔮 Looking Ahead
+## Looking Ahead
 
 ---
 Future directions for this research include:
@@ -169,7 +168,7 @@ Future directions for this research include:
 While gait alone can reveal a lot about a person, combining it with body shape information could make recognition even more reliable. This hybrid approach could significantly boost accuracy, especially in challenging or low-visibility scenarios.This topic is examined in greater detail in our subsequent gait recognition research. <!--, found [here](GaitRecognition2). -->
 
 **Using real-time SMPL models for live gait analysis.**
-By integrating the SMPL (Skinned Multi-Person Linear) model with real-time video processing, the system could analyze and visualize gait as it happens. This opens exciting possibilities, from live health monitoring and sports coaching to interactive animation and security applications where immediate feedback matters.
+By integrating the SMPL (Skinned Multi-Person Linear) model with real-time video processing, the system could analyse and visualise gait as it happens. This opens exciting possibilities, from live health monitoring and sports coaching to interactive animation and security applications where immediate feedback matters.
 
 **Further testing under realistic conditions.**
 To ensure the system works beyond controlled lab environments, it needs to be tested more extensively in the real world, where people wear different clothes, carry bags, move in crowds, or walk under changing lighting. Evaluating performance under these natural variations will help make the technology more robust, adaptable, and ready for deployment in everyday situations.
@@ -179,7 +178,7 @@ Incorporating a gender estimation module could help improve model calibration an
 
 <br>
 
-## 💭 Reflection
+## Reflection
 ---
 This project was a fascinating intersection of biomechanics, computer vision, and machine learning. It taught me how deeply *motion* defines identity, and how technology can uncover those patterns invisibly.
 

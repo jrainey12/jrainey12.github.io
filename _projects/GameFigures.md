@@ -5,7 +5,7 @@ description: 3D printed mini figures from video games.
 main_title: 3D Printed Game Figures
 img: assets/img/3DPrinting/ET2_v2.jpg
 importance: 3
-category: 3D Prints
+category: fun
 ---
 
 <style>

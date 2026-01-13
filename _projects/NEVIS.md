@@ -4,7 +4,7 @@ title: NEVIS
 description: <b>NE</b>uromorphic <b>VI</b>sion <b>S</b>ystem
 main_title: <h1 align=center><b>NE</b>uromorphic <b>VI</b>sion <b>S</b>ystem (<b>NEVIS</b>)</h1><hr>
 main_description: <h2 align=center>Building Brain-Inspired Vision Systems That See, and Think, Like We Do</h2>
-img: assets/img/NEVIS/kria_crop.png
+img:  assets/img/NEVIS/28x28-epoch1-6000-reset10.png # assets/img/NEVIS/kria_crop.png
 importance: 3
 category: PostDoc
 related_publications: true
@@ -29,7 +29,7 @@ That contrast inspired our recent research, presented in two papers at **SPIE 20
 Together, they show how we can make machines that don’t just _see_ like us, but also _think_ more like us.
 
 <br>
-<h2> 👁️ Seeing the World in Edges, Not Pixels</h2>
+<h2> Seeing the World in Edges, Not Pixels</h2>
 ---
 
 In our first paper, we focused on how to give an AI vision model a more **biological way of seeing**. The human visual cortex doesn’t start with whole objects, it starts with edges and orientations. Neurons in the brain fire for horizontal or vertical lines, and higher layers gradually assemble those into shapes and objects.
@@ -58,15 +58,34 @@ On tests with random images from the CIFAR-100 dataset, the edge-based, partiall
 
 
 <br>
-<h2>🧠 Bringing the Brain to Hardware</h2>
+<h2> Bringing the Brain to Hardware</h2>
 ---
 
 Of course, building a clever algorithm is one thing. Running it efficiently in the real world is another.
 
 In the second paper, we took our neuromorphic vision model and built it on a **Xilinx Kria KV260 FPGA**, creating what we call **NEVIS (NEuromorphic VIsion System)**. The goal: make the system not only _biologically plausible_ but also _practically efficient._
 
-FPGAs (Field-Programmable Gate Arrays) are reconfigurable chips that can perform thousands of operations in parallel, perfect for simulating spiking neurons that all fire at once. On the FPGA, NEVIS processed images about **40× faster** and used **less power** than a standard **Raspberry Pi 4B**, even though the Pi’s CPU runs at a much higher clock speed.
+FPGAs (Field-Programmable Gate Arrays) are reconfigurable chips that can perform thousands of operations in parallel, perfect for simulating spiking neurons that all fire at once.
+The pipeline developed for the FPGA is shown below:
+<div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/NEVIS/SNNFPGA.png" title="FPGA SNN Pipeline." class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+FPGA SNN Pipeline.
+</div>
+On the FPGA, NEVIS processed images about **40× faster** and used **less power** than a standard **Raspberry Pi 4B**, even though the Pi’s CPU runs at a much higher clock speed.
 
+<div style="padding-left:25%; padding-right:25%;">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/NEVIS/kria.jpg" title="kria FPGA" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+Xilinx Kria KV260 FPGA.
+</div>
+<br>
 Here’s how it stacked up:
 
 <div align=center markdown=1>
@@ -77,21 +96,11 @@ Here’s how it stacked up:
 |Xilinx Kria KV260 FPGA|38 ms|3.8 W|**≈ 40× faster**|
 
 </div>
-
 <br>
 That speed-up comes from the FPGA’s natural parallelism, every neuron and synapse can compute simultaneously, just like a biological brain.
 
-<div style="padding-left:20%; padding-right:20%;">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/NEVIS/kria.jpg" title="kria FPGA" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-Xilinx Kria KV260 FPGA.
-</div>
-
 <br>
-<h2>🔍Why This Matters</h2>
+<h2>Why This Matters</h2>
 ---
 
 Taken together, these two studies show how **neuromorphic computing** can lead to systems that are not only faster and more efficient but also more _aware_ of what they’re seeing.
@@ -102,7 +111,7 @@ In short, this is a step toward machines that see with structure, think with spi
 
 <br>
 
-<h2>🔑 Key Takeaways</h2>
+<h2>Key Takeaways</h2>
 ---
 - **Brains do it better, and smarter.** By mimicking how the visual cortex processes edges and patterns, neuromorphic vision systems can learn more efficiently and handle unfamiliar data with greater robustness.
 
@@ -116,7 +125,7 @@ In short, this is a step toward machines that see with structure, think with spi
 
 <br>
 
-<h2> 🔮 Looking Ahead </h2>
+<h2> Looking Ahead </h2>
 ---
 
 The next challenge is to go beyond simple edge detection and digits. The human visual system processes hundreds of orientations, textures, and motion cues across many layers. Expanding NEVIS to capture that richness, and doing so efficiently on hardware, is the natural way to progress.

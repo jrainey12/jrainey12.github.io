@@ -1,81 +1,91 @@
 ---
 layout: page
-title: Darts
-description: a project with a background image and giscus comments
+title: DartsCV
+description: Automated Darts Scoring System
+main_title: <h1 align=center>DartsCV</h1><hr>
+main_description: <h2 align=center> Automated Darts Scoring with Computer Vision</h2><hr>
 img: assets/img/5.jpg
 importance: 3
-category: TBC
-giscus_comments: false
+category: fun
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<style>
+h2   {
+     color: #429435;
+     font-size:180%;
+     }
+</style>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+DartsCV is an experimental computer vision project that explores the automation of dart scoring using low-cost embedded hardware and OpenCV.
+The system employs two Raspberry Pi boards, each equipped with a camera, to track dart impacts on a standard dartboard. Through image processing and geometric calibration, the software estimates the impact position of each dart and calculates the score automatically.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The project demonstrates the feasibility of applying real-time vision algorithms to a casual gaming setup using minimal hardware.
+The project was initially completed in 2020 and disasembled in 2021, but has been reopen to rebuild it and make improvements using updated hardware and techniques.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/9.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+<br>
+## System Design
+---
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The current setup consists of:
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- Two Raspberry Pi units with Pi Cameras (or alternatively, USB webcams)
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- A Python backend utilizing OpenCV, NumPy, and scikit-image for image capture and processing
 
-{% raw %}
+- A Qt5-based graphical interface for game management and visualization
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- Paramiko for SSH-based communication between devices
 
-{% endraw %}
+One Raspberry Pi handles the main user interface, while the second assists with synchronized camera capture. Images from both cameras are used to triangulate the dart’s impact location on the board.
+
+<br>
+## Features
+---
+
+- Automated scoring for X01 (standard darts game)
+
+- Support for multi-camera input (Pi Cameras or USB webcams)
+
+- Modular code structure for integrating new dart games
+
+- Remote UI via SSH with X11 forwarding
+
+<br>
+
+## Tech Stack
+---
+
+**Languages & Frameworks:** Python, OpenCV, Qt5
+
+**Hardware:** 2x Raspberry Pi, Pi Cameras / USB Webcams
+
+**Libraries:** NumPy, scikit-image, Paramiko
+
+<br>
+## Current Challenges
+---
+
+- Improving dart detection and segmentation
+
+- Handling variations in impact angle and lighting
+
+- Enhancing camera calibration for 3D triangulation
+
+- Improved camera mounting using custom 3D printed mounts. 
+
+<br>
+##  Looking Ahead
+---
+
+Future plans include:
+
+- Implementation on a single Rasberry Pi (Pi 5 with two cameras)
+
+- Fully autonomous operation with a local display and touchscreen controls
+
+- Dedicated lighting controlled by Pi, used for illumination, feedback and more complex interactions.
+
+- Statistical analysis: hit accuracy, consistency, groupings, average score per round, etc. with visuallations.
+- Broader support for multiple darts games
+
+View on [GitHub](https://github.com/james-rainey/darts_cv).

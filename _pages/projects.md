@@ -7,7 +7,7 @@ permalink: /projects/
 description: A Growing Collection of My Projects.
 nav: true
 nav_order: 2
-display_categories: [PostDoc, PhD] # TBC, Personal, 3D Prints
+display_categories: [PostDoc, PhD] #, fun, TBC] # TBC, Personal, 3D Prints
 horizontal: false
 ---
 <style>

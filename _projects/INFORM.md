@@ -6,7 +6,7 @@ main_title: <h1 align=center><b>INFORM</b>:</h1><h2 align=center><b>IN</b>tellig
 main_description: <h2 align=center>Empowering Data-driven Decisions in Foodservice</h2>
 img: assets/img/INFORM/food_before.jpg
 importance: 1
-category: TBC
+category: PostDoc
 related_publications: true
 ---
 
