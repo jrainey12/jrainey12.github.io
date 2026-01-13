@@ -30,7 +30,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "projects-markerless-motion-capture",
+        },{id: "projects-combating-ai",
+          title: 'Combating AI',
+          description: "used for Image Manipulation",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/CombatingAI.html";
+            },},{id: "projects-markerless-motion-capture",
           title: 'Markerless Motion Capture',
           description: "For Gait Recognition",
           section: "Projects",handler: () => {
@@ -60,9 +65,9 @@ ninja.data = [{
           description: "A TRusted MediA DIsTribution Framework",
           section: "Projects",handler: () => {
               window.location.href = "/projects/TRAIT.html";
-            },},{id: "projects-darts",
-          title: 'Darts',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-dartscv",
+          title: 'DartsCV',
+          description: "Automated Darts Scoring System",
           section: "Projects",handler: () => {
               window.location.href = "/projects/darts.html";
             },},{
@@ -77,7 +82,7 @@ ninja.data = [{
         title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://github.com/jrainey12", "_blank");
+          window.open("https://github.com/james-rainey", "_blank");
         },
       },{
         id: 'social-linkedin',
