@@ -4,7 +4,7 @@ title: NEVIS
 description: <b>NE</b>uromorphic <b>VI</b>sion <b>S</b>ystem
 main_title: <h1 align=center><b>NE</b>uromorphic <b>VI</b>sion <b>S</b>ystem (<b>NEVIS</b>)</h1><hr>
 main_description: <h2 align=center>Building Brain-Inspired Vision Systems That See, and Think, Like We Do</h2>
-img:  assets/img/NEVIS/28x28-epoch1-6000-reset10.png # assets/img/NEVIS/kria_crop.png
+img:  assets/img/NEVIS/cover.png # assets/img/NEVIS/kria_crop.png
 importance: 3
 category: PostDoc
 related_publications: true
