@@ -25,10 +25,10 @@ I’m a **Computer Vision Researcher** passionate about building intelligent sys
 
 With experience in both research and industry, I specialise in taking innovative concepts from prototype to fully functional systems. I’ve contributed to projects across a variety of domains, including:
 
-<p><a href="projects/">Algae Detection</a> - creating a method for detecting algae growth using satellite imagery.</p>
-<p><a href="projects/">Food Recognition</a> – developing systems that understand and classify food images.</p>
+<p><a href="404">Algae Detection</a> - creating a method for detecting algae growth using satellite imagery.</p>
+<p><a href="404">Food Recognition</a> – developing systems that understand and classify food images.</p>
 <p><a href="projects/NEVIS">Neuromorphic Vision</a> – exploring brain-inspired vision systems for efficient processing.</p>
-<p><a href="projects/">Media Authenticity</a> – detecting deepfake images and verifying visual content integrity.</p>
+<p><a href="projects/TRAIT">Media Authenticity</a> – detecting deepfake images and verifying visual content integrity.</p>
 <p><a href="projects/GaitRecognition">Gait Recognition</a> – analyzing human motion for identification and forensic applications.</p>
 
 I’m skilled in **Python** and modern deep learning frameworks, with a strong track record of building robust applications. My research has resulted in a growing number of **publications in computer vision**, and I enjoy collaborating on initiatives that push the boundaries of AI while delivering meaningful real-world impact.
